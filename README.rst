@@ -8,7 +8,7 @@ Get sources
 ::
 
    roscd
-   git clone git@github.com:SalemHarrache/robair-ros-pkg.git
+   git clone git@github.com:thomasNDS/robair-ros-pkg.git
 
 
 Install dependencies
