@@ -10,9 +10,9 @@ from geventwebsocket.handler import WebSocketHandler
 from gevent.pywsgi import WSGIServer
 from flask import Flask, request, render_template,session, redirect
 
-from robair_msgs.msg import Command
-
 roslib.load_manifest('robair_driver')
+
+from robair_msgs.msg import Command
 
 
 class TabletNode(threading.Thread):
@@ -62,7 +62,7 @@ def api():
     return
  
 if __name__ == '__main__':
-    address = "127.0.0.1", 5000
+    address = "127.0.0.1", 4243
     http_server = WSGIServer(address, app, handler_class=WebSocketHandler)
     #tablet.main_loop()
     rospy.loginfo("%s running..." % tablet_node.node_name)
