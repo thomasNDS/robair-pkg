@@ -58,7 +58,7 @@ def api():
         ws = request.environ['wsgi.websocket']
         while True:
             message = ws.receive()
-            tablet.key_pressed(message)
+            tablet_node.key_pressed(message)
             ws.send(message)
     return
  

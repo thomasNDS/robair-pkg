@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import redis
 import datetime
 import threading
 
@@ -36,7 +35,6 @@ class TabletNode(threading.Thread):
 
 
 tablet_node = TabletNode()
-red = redis.StrictRedis()
 app = Flask(__name__)
 app.secret_key = 'blablabla'
 
