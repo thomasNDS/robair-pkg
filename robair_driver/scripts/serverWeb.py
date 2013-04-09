@@ -1,8 +1,5 @@
 #!/usr/bin/env python
-<<<<<<< HEAD
 
-=======
->>>>>>> 5b876f700fa6b911cadb0c14ec72415a7c4e2420
 import datetime
 import threading
 
