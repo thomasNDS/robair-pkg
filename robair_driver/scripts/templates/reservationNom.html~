@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>RobAIR : Reservation page</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+    <h1>Reserve</h1>
+    <form action="" method="post">user: <input name="user"/></form>
+    <form method=GET action="http://127.0.0.1:9090/api/new" onsubmit='showId()'>    
+    <table BORDER=0>
+	<tr>
+	    <td>Put your jabber identifiant :</td>
+	    <td><input id='idJab' type=text name="jid">  </td>
+	</tr>
+	<tr>
+	      <td COLSPAN=2><input type="submit" value="Send"></td>
+	</tr>
+
+    </table>
+    </form> 
+</body>
+</html>
