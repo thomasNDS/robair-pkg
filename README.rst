@@ -13,8 +13,10 @@ Get sources
 Install dependencies
 ====================
 
+
 ::
-    sudo pip install requirement.txt
+
+    sudo pip install requirement.txt   
     sudo ./setup-debs.sh
 
 
