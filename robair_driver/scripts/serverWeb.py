@@ -18,23 +18,19 @@ from robair_msgs.msg import Command
 class TabletNode(threading.Thread):
     '''Robair Tablet node'''
     def __init__(self, topic='/cmd', node_name="tablet"):
-    	#print("init\n")
         self.node_name = node_name
         self.pub = rospy.Publisher(topic, Command)
         rospy.init_node('tablet')
 
-#    def main_loop(self):
-#        done = lambda: rospy.is_shutdown()
 
     def key_pressed(self, key):
-        directions = {"top": (1, 0), "bottom": (-1, 0),
+        if (not rospy.is_shutdown())
+            directions = {"top": (1, 0), "bottom": (-1, 0),
                       "left": (None, -90), "right": (None, 90)}
-        if key in directions.keys():
-            print("%s" % key)
-            self.pub.publish(Command(*directions[key]))
+            if key in directions.keys():
+                print("%s" % key)
+                self.pub.publish(Command(*directions[key]))
             
-
-
 tablet_node = TabletNode()
 app = Flask(__name__)
 app.secret_key = 'blablabla'
@@ -64,10 +60,7 @@ def api():
 if __name__ == '__main__':
     address = "127.0.0.1", 4243
     http_server = WSGIServer(address, app, handler_class=WebSocketHandler)
-    #tablet.main_loop()
     rospy.loginfo("%s running..." % tablet_node.node_name)
-   #tablet_node.main_loop()
-    #rospy.loginfo("%s stopped." % tablet_node.node_name)
     print("Server running on http://%s:%d. Ctrl+C to quit" % address)
     http_server.serve_forever()
     
