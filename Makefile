@@ -1,2 +1,2 @@
 include $(shell rospack find mk)/cmake_stack.mk
-include $(shell rosstack find robair-ros-pkg)/Makefile.dev
+include $(shell rosstack find robair-ricm4)/Makefile.dev

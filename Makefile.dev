@@ -18,7 +18,7 @@ doc:
 	rosrun rosdoc rosdoc $(shell ls -a | grep robair)
 
 robair:
-	roslaunch robair_app robair.launch
+	 robair_app robair.launch
 
 tv:
 	roslaunch robair_app tv.launch

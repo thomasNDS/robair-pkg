@@ -18,7 +18,7 @@ class NxtNode(object):
         rospy.init_node(self.node_name)
         rospy.Subscriber('/cmd', Command, self.new_cmd_callback)
         self.current_cmd = Command(0, 0)
-        self.brick = nxt.find_one_brick()
+        self.brick = nxt.find_one_brick(debug = True)
         self.motor_a = nxt.Motor(self.brick, nxt.PORT_A)
         self.motor_b = nxt.Motor(self.brick, nxt.PORT_B)
 
