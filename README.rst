@@ -7,8 +7,8 @@ Get sources
 
 ::
 
-   roscd
-   git clone https://github.com/thomasNDS/robair-pkg.git
+    roscd
+    git clone https://github.com/thomasNDS/robair-pkg.git
 
 Install dependencies
 ====================
