@@ -17,7 +17,7 @@
 			function position(e) {
 				x = (navigator.appName.substring(0, 3) == "Net") ? e.pageX : event.x + document.body.scrollLeft;
 				y = (navigator.appName.substring(0, 3) == "Net") ? e.pageY : event.y + document.body.scrollTop;
-				document.title = "Souris X:" + x + " / Y:" + y;
+				document.title = "Robair Navigation";
 			}
 		</script>
 	</head>
@@ -45,7 +45,7 @@
 			});
 			setInterval(function() {
 				var outputEl = document.getElementById('result');
-				outputEl.innerHTML = '<b>Result:</b> ' + ' dx:' + joystick.deltaX() + ' dy:' + joystick.deltaY() + (joystick.right() ? ' right' : '') + (joystick.up() ? ' up' : '') + (joystick.left() ? ' left' : '') + (joystick.down() ? ' down' : '');
+				//outputEl.innerHTML = '<b>Result:</b> ' + ' dx:' + joystick.deltaX() + ' dy:' + joystick.deltaY() + (joystick.right() ? ' right' : '') + (joystick.up() ? ' up' : '') + (joystick.left() ? ' left' : '') + (joystick.down() ? ' down' : '');
 				//directions commands.
 				if (joystick.up()) {
 					goTop();
@@ -57,6 +57,10 @@
 					goLeft();
 			}, 1 / 30 * 1000);
 		</script>
+
+		<div id="Consigne">
+			<p> Touchez la zone pour faire bouger le robot, appuyez sur stop pour l'arrêter </p>
+		</div>	
 
 	</body>
 </html>

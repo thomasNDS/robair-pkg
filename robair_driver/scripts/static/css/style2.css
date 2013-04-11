@@ -165,7 +165,11 @@ body {
 			height: 0%;		
 		}
 		
-		
+#Consigne {
+	position:absolute;
+	top:20%;
+	left:5%;
+}
 		
 		
 		

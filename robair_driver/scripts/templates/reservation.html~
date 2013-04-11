@@ -8,7 +8,7 @@
 <body>
     <h1>Reservation</h1>
 
-    <form method=GET action="http://127.0.0.1:9090/api/new" onsubmit='showId()'>    
+    <form method=GET action="http://127.0.0.1:4242/api/new" onsubmit='showId()'>    
     <table BORDER=0 class= fenetre>
     	<tr></tr>
 	<tr>

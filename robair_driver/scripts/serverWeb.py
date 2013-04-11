@@ -24,7 +24,7 @@ class TabletNode(threading.Thread):
 
 
     def key_pressed(self, key):
-        if (not rospy.is_shutdown())
+        if (not rospy.is_shutdown()):
             directions = {"top": (1, 0), "bottom": (-1, 0),
                       "left": (None, -90), "right": (None, 90)}
             if key in directions.keys():

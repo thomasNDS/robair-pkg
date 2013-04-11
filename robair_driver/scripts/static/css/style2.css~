@@ -67,7 +67,9 @@ background-color:lightgrey;
  text-align:right; 
 
 }
-
+.texte{
+	color:white;
+}
     .myButton {
      text-align:right; 
         -moz-box-shadow:inset 0px 1px 0px 0px #a6827e;
@@ -163,7 +165,11 @@ body {
 			height: 0%;		
 		}
 		
-		
+#Consigne {
+	position:absolute;
+	top:20%;
+	left:5%;
+}
 		
 		
 		

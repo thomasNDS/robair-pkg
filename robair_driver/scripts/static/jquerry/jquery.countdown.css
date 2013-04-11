@@ -25,8 +25,8 @@ vous pouvez masquer une partie du compte � rebours ici
 .countHours{}
 .countDiv1{}
 .countMinutes{}
-.countDiv2{}
-.countSeconds{}
+.countDiv2{display:none !important;}
+.countSeconds{display:none !important;}
 
 .countDiv{display:inline-block;width:16px;height:1.6em;position:relative;}
 .countDiv:before,
